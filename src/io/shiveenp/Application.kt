@@ -4,8 +4,6 @@ import org.http4k.core.HttpHandler
 import org.http4k.core.Response
 import org.http4k.core.Status.Companion.BAD_REQUEST
 import org.http4k.core.Status.Companion.OK
-import org.http4k.server.Netty
-import org.http4k.server.asServer
 import org.http4k.serverless.AppLoader
 
 object oembedDataApp : AppLoader {
@@ -24,15 +22,4 @@ object oembedDataApp : AppLoader {
     }
 
     private const val LINK_QUERY_PARAM = "link"
-}
-
-// uncomment this bit to run the lambda server locally
-fun main(){
-    // launch lambda locally
-    fun runLambdaLocally() {
-        val app: HttpHandler = oembedDataApp(mapOf())
-        app.asServer(Netty(9000)).start()
-    }
-
-    runLambdaLocally()
 }
