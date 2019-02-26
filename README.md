@@ -31,4 +31,10 @@ GET http://localhost:9000/?link=<link_we_want_to_get_oembed_for>
 
 the resulting response would contain the oembed html will be ready to be embedded in your page.
 
+### Currently supported:
+- Instagram
+- Twitter
+- Youtube
+
+This service is in active development and will soon have an aws lamda based api call site and some more non oembed standard supporting services added, such as github.
 
