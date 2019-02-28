@@ -25,6 +25,12 @@ The service handles the parsing of the link to identify the oembed resource type
 
 #### Usage
 
+The service is deployed as an aws lamda and can be invoked as:
+
+```http request
+GET https://sx2psa0bab.execute-api.ap-southeast-2.amazonaws.com/Testing?=<link_to_a_supported_service>
+```
+
 ```http request
 GET http://localhost:9000/?link=<link_we_want_to_get_oembed_for>
 ```
