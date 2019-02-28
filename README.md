@@ -1,7 +1,10 @@
 # KOEMBER
+
 A pure kotlin service that generates an embeddable sharable html given a link. The links are defined in the [oembed specification](https://oembed.com/)
 
 The service uses the lightweight [http4k](https://www.http4k.org/) library running the server and keep the implementation light.
+
+Note: This is a toy application for a blogpost
 
 ## How to run locally
 
